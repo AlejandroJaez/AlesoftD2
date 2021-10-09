@@ -1,0 +1,32 @@
+﻿<Window x:Class="AlesoftD2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AlesoftD2"
+        mc:Ignorable="d"
+        Title="Checador Celfun" Height="720" Width="1280" WindowState="Maximized" Icon="Recurso 1.png">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="accept_all_you_see-wallpaper-1920x1080.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Center" Margin="0" Background="#CCE4E4E4" VerticalAlignment="Center" >
+            <Image x:Name="profilePic" HorizontalAlignment="Center" Height="200" Margin="0,50,0,0" Width="200" VerticalAlignment="Top" Source="dummy-profile-pic-300x300-1.png"/>
+
+            <Grid HorizontalAlignment="Center" Margin="20,350,20,50" VerticalAlignment="Bottom" Height="86">
+                <Label x:Name="nameLabel"  HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" FontFamily="{DynamicResource {x:Static SystemFonts.CaptionFontFamilyKey}}" FontSize="24"/>
+                <Label x:Name="datetimeLabel"  HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" FontSize="20"/>
+                <Label x:Name="statusLabel"  HorizontalAlignment="Right" Margin="400,50,0,0" VerticalAlignment="Top" FontSize="20"/>
+            </Grid>
+        </Grid>
+        <StatusBar VerticalAlignment="Bottom">
+            <StatusBarItem DockPanel.Dock="Right">
+                <TextBlock x:Name="rightstatusBar"></TextBlock>
+            </StatusBarItem>
+            <StatusBarItem>
+                <TextBlock x:Name="leftstatusBar"></TextBlock>
+            </StatusBarItem>
+        </StatusBar>
+
+    </Grid>
+</Window>
